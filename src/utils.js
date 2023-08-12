@@ -1,6 +1,8 @@
-export function checkAvailable(features = []) {
-  return features.reduce((object, value) => {
-    object[value] = value in window;
-    return object;
-  }, {});
+export function fillAvailable(features = []) {
+  return features
+    .map((api) => {
+      api.available = api.id in window;
+      return api;
+    })
+    .sort((a, b) => (a.available === b.available ? 0 : a.available ? -1 : 1));
 }
