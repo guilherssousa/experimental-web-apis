@@ -1,5 +1,9 @@
 <script>
+  import { Router, Route } from "svelte-routing";
+
   import Home from "./screens/Home.svelte";
 </script>
 
-<Home />
+<Router url="/">
+  <Route path="/" component={Home} />
+</Router>
