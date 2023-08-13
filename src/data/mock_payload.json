@@ -1,0 +1,98 @@
+[
+  {
+    "boundingBox": {
+      "x": 395,
+      "y": 59,
+      "width": 114,
+      "height": 114,
+      "top": 59,
+      "right": 509,
+      "bottom": 173,
+      "left": 395
+    },
+    "cornerPoints": [
+      {
+        "x": 396,
+        "y": 59
+      },
+      {
+        "x": 508,
+        "y": 59
+      },
+      {
+        "x": 509,
+        "y": 173
+      },
+      {
+        "x": 395,
+        "y": 173
+      }
+    ],
+    "format": "data_matrix",
+    "rawValue": "https://encurtador.com.br/wMR59"
+  },
+  {
+    "boundingBox": {
+      "x": 230,
+      "y": 490,
+      "width": 162,
+      "height": 120,
+      "top": 490,
+      "right": 392,
+      "bottom": 610,
+      "left": 230
+    },
+    "cornerPoints": [
+      {
+        "x": 230,
+        "y": 497
+      },
+      {
+        "x": 391,
+        "y": 490
+      },
+      {
+        "x": 392,
+        "y": 602
+      },
+      {
+        "x": 233,
+        "y": 610
+      }
+    ],
+    "format": "ean_13",
+    "rawValue": "7891079013038"
+  },
+  {
+    "boundingBox": {
+      "x": 20,
+      "y": 746,
+      "width": 174,
+      "height": 174,
+      "top": 746,
+      "right": 194,
+      "bottom": 920,
+      "left": 20
+    },
+    "cornerPoints": [
+      {
+        "x": 20,
+        "y": 746
+      },
+      {
+        "x": 193,
+        "y": 746
+      },
+      {
+        "x": 194,
+        "y": 920
+      },
+      {
+        "x": 21,
+        "y": 919
+      }
+    ],
+    "format": "qr_code",
+    "rawValue": "oi rio de janeiro\n"
+  }
+]

@@ -1,9 +1,8 @@
 <script>
-  import { Link } from "svelte-routing";
-
   import Highlight from "svelte-highlight";
   import javascript from "svelte-highlight/languages/javascript";
 
+  import Navbar from "../lib/Navbar.svelte";
   import Callout from "../lib/Callout.svelte";
   import Rectangle from "../lib/Rectangle.svelte";
 
@@ -43,6 +42,12 @@
     fileReader.readAsDataURL(file);
   }
 
+  async function useMockOutput() {
+    const { default: mockOutput } = await import("../data/mock_payload.json");
+    output = mockOutput;
+    mockOutput.forEach(drawRectangle);
+  }
+
   async function readBarcodes() {
     if (!available) return;
 
@@ -58,6 +63,7 @@
         "code_128",
         "code_39",
         "code_93",
+        "codabar",
       ],
     });
 
@@ -72,7 +78,8 @@
 </svelte:head>
 
 <section class="mt-4">
-  <Link to="/">&larr; Início</Link>
+  <Navbar />
+
   <h1 class="mt-4 font-bold text-2xl">Barcode Detection API</h1>
 
   {#if !available}
@@ -84,12 +91,23 @@
 
   <p class="mt-2">
     A API de detecção de código de barras detecta códigos de barras lineares e
-    bidimensionais em imagens.
+    bidimensionais em imagens. Formatos aceitos: EAN-13, EAN-8, QR Code, Aztec,
+    Code 128, Code 39, Code 93, Codabar, Data Matrix, ITF, PDF417, UPC-A e
+    UPC-E.
   </p>
 
   <p class="mt-2">
-    Formatos aceitos: EAN-13, EAN-8, QR Code, Aztec, Code 128, Code 39, Code 93,
-    Codabar, Data Matrix, ITF, PDF417, UPC-A, UPC-E.
+    Se o seu navegador ainda não tiver suporte para a API, um botão "Usar Mock
+    Payload" estará disponível, assim você poderá observar o output da detecção
+    com uma imagem real.
+  </p>
+
+  <p class="mt-2">
+    <a
+      class="text-cyan-500 font-semibold hover:underline"
+      href="https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector"
+      target="_blank">Documentação no MDN (em inglês)</a
+    >
   </p>
 
   <h2 class="mt-6 font-bold text-xl">Exemplo</h2>
@@ -107,14 +125,23 @@
       <input
         id="changeImage"
         type="file"
-        class="invisible"
+        class="hidden"
         accept="image/*"
         on:change={changeImage}
       />
+
+      {#if !available}
+        <button
+          on:click={useMockOutput}
+          class="rounded-md bg-cyan-500 text-white font-semibold px-2 py-1"
+        >
+          Usar Mock Payload
+        </button>
+      {/if}
     </div>
     <div
       id="image-container"
-      class="flex items-center justify-center w-full overflow-hidden"
+      class="mt-4 flex items-center justify-center w-full overflow-hidden"
     >
       <div class="relative mx-auto">
         <img
@@ -167,11 +194,31 @@
       </table>
 
       <p class="mt-6">
-        Esse é o payload de retorno da função decode(&lt;HTMLImageElement&gt;)
+        Esse é o payload de retorno da função <code
+          >decode(&lt;HTMLImageElement&gt;)</code
+        >. A função retorna um array de objetos com as seguintes propriedades:
       </p>
+      <ul class="list-disc list-inside mt-2">
+        <li>
+          <code>boundingBox</code>: Um objeto com as propriedades{" "}
+          <code>x</code>, <code>y</code>, <code>width</code> e{" "}
+          <code>height</code> que representam a posição e o tamanho do código de
+          barras na imagem.
+        </li>
+        <li>
+          <code>cornerPoints</code>: Um array com os pontos de canto do código
+          de barras.
+        </li>
+        <li>
+          <code>format</code>: O formato do código de barras detectado.
+        </li>
+        <li>
+          <code>rawValue</code>: O valor do código de barras detectado.
+        </li>
+      </ul>
 
       <Highlight
-        class="mt-4"
+        class="mt-6"
         language={javascript}
         code={JSON.stringify(output, null, 1)}
       />
