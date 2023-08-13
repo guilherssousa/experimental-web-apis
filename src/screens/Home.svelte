@@ -115,8 +115,11 @@
       </p>
 
       <p class="mt-2">
-        Os desenvolvedores do projeto repositório estão listados aqui:
+        A Stack usada no desenvolvimento do site foi Vite, Svelte, Tailwind e
+        Highlight.js.
       </p>
+
+      <p class="mt-2">Os contribuidores do repositório estão listados aqui:</p>
 
       <Contributors />
     </section>
