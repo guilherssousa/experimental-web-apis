@@ -6,12 +6,12 @@
   import Callout from "../lib/Callout.svelte";
   import Rectangle from "../lib/Rectangle.svelte";
 
-  import { isURL } from "../utils";
+  import BarcodeTable from "../lib/BarcodeTable.svelte";
 
   const available = "BarcodeDetector" in window;
-  let image;
   let output = [];
   let rectangles = [];
+  let image;
 
   function drawRectangle({ boundingBox, format, rawValue }, id) {
     const resized = image.width / image.naturalWidth;
@@ -114,7 +114,8 @@
   <hr />
 
   <div>
-    <h3>Input</h3>
+    <h3 id="input">Input</h3>
+
     <div class="mt-2">
       <label
         for="changeImage"
@@ -139,6 +140,7 @@
         </button>
       {/if}
     </div>
+
     <div
       id="image-container"
       class="mt-4 flex items-center justify-center w-full overflow-hidden"
@@ -158,40 +160,11 @@
         {/each}
       </div>
     </div>
+
     <div class="mt-4">
-      <h3>Output</h3>
-      <p class="mt-2">Todos os códigos de barras detectados:</p>
+      <h3 id="output">Output</h3>
 
-      <table class="text-sm mt-4 table-fixed">
-        <thead>
-          <th>ID</th>
-          <th>Link</th>
-          <th>Formato</th>
-        </thead>
-
-        <tbody>
-          {#each output as code, index (code)}
-            <tr>
-              <td>{index + 1}</td>
-              <td>
-                {#if isURL(code.rawValue)}
-                  <a
-                    href={code.rawValue}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-blue-500 hover:underline"
-                  >
-                    {code.rawValue}
-                  </a>
-                {:else}
-                  {code.rawValue}
-                {/if}
-              </td>
-              <td>{code.format}</td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
+      <BarcodeTable barcodes={output} />
 
       <p class="mt-6">
         Esse é o payload de retorno da função <code
