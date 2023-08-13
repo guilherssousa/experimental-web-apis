@@ -1,19 +1,16 @@
 <script>
+  import { onMount } from "svelte";
   import { Link } from "svelte-routing";
 
   import Highlight from "svelte-highlight";
   import javascript from "svelte-highlight/languages/javascript";
-
-  import("highlight.js/styles/github-dark-dimmed.css");
+  import "highlight.js/styles/github-dark-dimmed.css";
 
   import Card from "../lib/Card.svelte";
   import Contributors from "../lib/Contributors.svelte";
 
   import apis from "../data/apis.json";
-  import { fillAvailable } from "../utils";
-  import { onMount } from "svelte";
-
-  let githubStars = 0;
+  import { fillAvailable, getGitHubStars } from "../utils";
 
   const availableApis = fillAvailable(apis);
 
@@ -23,20 +20,17 @@
     return
   }`;
 
-  onMount(async () => {
-    const response = await fetch(
-      "https://api.github.com/repos/guilherssousa/experimental-web-apis"
-    );
-    const data = await response.json();
+  let githubStars = 0;
 
-    githubStars = data.stargazers_count;
+  onMount(async () => {
+    githubStars = await getGitHubStars();
   });
 </script>
 
 <section class="pt-8 flex flex-col text-xl items-center">
   <div class="text-center">
     <div class="text-[64px] leading-[96px]">🧪</div>
-    <h1 class="text-4xl mt-4 font-bold">Laboratório de Web APIs</h1>
+    <h1 class="text-3xl sm:text-4xl mt-4 font-bold">Laboratório de Web APIs</h1>
 
     <p class="mt-2 dark:text-neutral-300 text-neutral-700">
       Teste exemplos de Web APIs experimentais e novas funcionalidades do
@@ -44,7 +38,7 @@
     </p>
   </div>
 
-  <ul class="mt-2 flex gap-x-6 text-cyan-500 font-bold">
+  <ul class="mt-2 flex flex-wrap gap-x-6 gap-y-2 text-cyan-500 font-bold">
     <li><a href="#apis">Experimentos</a></li>
     <li><a href="#how-to">Como usar</a></li>
     <li><a href="#sobre">Sobre</a></li>
@@ -63,10 +57,7 @@
   <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {#each availableApis as api (api.id)}
       <li>
-        {#if api.available}
-          <Link to={api.link}><Card {api} /></Link>
-        {:else}
-          <Card {api} />{/if}
+        <Link to={api.link}><Card {api} /></Link>
       </li>
     {/each}
   </ul>

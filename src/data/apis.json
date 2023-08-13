@@ -1,7 +1,7 @@
 [
   {
     "id": "BarcodeDetector",
-    "name": "Barcode Detector API",
+    "name": "Barcode Detection API",
     "description": "A API de detecção de código de barras fornece a capacidade de encontrar e decodificar múltiplos códigos de barras em uma imagem ou fluxo de vídeo.",
     "link": "/barcodes",
     "tags": ["🛡 Apenas HTTPS", "📱 Apenas Android"]

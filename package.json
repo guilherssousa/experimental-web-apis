@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "nohup ngrok http 5173 --log=stdout > ngrok.log &"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
