@@ -10,6 +10,9 @@
 
   import apis from "../data/apis.json";
   import { fillAvailable } from "../utils";
+  import { onMount } from "svelte";
+
+  let githubStars = 0;
 
   const availableApis = fillAvailable(apis);
 
@@ -18,6 +21,15 @@
     // ...
     return
   }`;
+
+  onMount(async () => {
+    const response = await fetch(
+      "https://api.github.com/repos/guilherssousa/experimental-web-apis"
+    );
+    const data = await response.json();
+
+    githubStars = data.stargazers_count;
+  });
 </script>
 
 <main class="bg-white min-h-screen text-neutral-900 pb-4">
@@ -39,7 +51,7 @@
         <li><a href="#sobre">Sobre</a></li>
         <li>
           <a href="https://github.com/guilherssousa/experimental-web-apis">
-            GitHub
+            GitHub (⭐ {githubStars})
           </a>
         </li>
       </ul>

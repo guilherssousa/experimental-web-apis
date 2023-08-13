@@ -3,7 +3,8 @@
     "id": "BarcodeDetector",
     "name": "Barcode Detector API",
     "description": "A API de detecção de código de barras fornece a capacidade de encontrar e decodificar múltiplos códigos de barras em uma imagem ou fluxo de vídeo.",
-    "link": "/barcodes"
+    "link": "/barcodes",
+    "tags": ["🛡 Apenas HTTPS", "📱 Apenas Android"]
   },
   {
     "id": "ViewTransition",
@@ -15,6 +16,7 @@
     "id": "Sanitizer",
     "name": "HTML Sanitizer API",
     "description": "A API de sanitização HTML fornece uma maneira segura de inserir HTML na DOM sem a possibilidade de injetar código malicioso.",
-    "link": "/sanitizer"
+    "link": "/sanitizer",
+    "tags": ["🛡 Apenas HTTPS"]
   }
 ]
