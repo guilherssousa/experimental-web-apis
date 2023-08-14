@@ -10,7 +10,8 @@
     "id": "ViewTransition",
     "name": "View Transition API",
     "description": "A API de transição de Views fornece um mecanismo para criar facilmente transições animadas entre diferentes estados da DOM, ao mesmo tempo em que atualiza o conteúdo em um único passo.",
-    "link": "/view-transition"
+    "link": "/transitions",
+    "tags": ["🌈 No site inteiro", "😎 Powered by Astro"]
   },
   {
     "id": "Sanitizer",

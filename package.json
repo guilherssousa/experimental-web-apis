@@ -4,20 +4,23 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "serve": "nohup ngrok http 5173 --log=stdout > ngrok.log &"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "serve": "nohup ngrok http 3000 --log=stdout > ngrok.log &"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.4.2",
-    "autoprefixer": "^10.4.14",
     "highlight.js": "^11.8.0",
-    "postcss": "^8.4.27",
     "svelte": "^4.0.5",
-    "svelte-highlight": "^7.3.0",
-    "svelte-routing": "^2.0.0",
-    "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^3.1.0",
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^2.10.7",
+    "svelte-highlight": "^7.3.0",
+    "tailwindcss": "^3.3.3"
   }
 }

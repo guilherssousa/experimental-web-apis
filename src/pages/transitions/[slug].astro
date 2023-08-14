@@ -1,0 +1,37 @@
+---
+import Base from "../../layouts/Base.astro";
+import albums from "../../data/albums.json";
+
+export function getStaticPaths() {
+  return albums.map((album) => ({ params: { slug: album.slug } }));
+}
+
+const { slug } = Astro.params;
+const album = albums.find((album) => album.slug === slug);
+if (!album) Astro.redirect("/transitions");
+---
+
+<title>{album?.name} de {album?.artist} - Laboratório de Web APIs</title>
+
+<Base>
+  <div class="py-4">
+    <a href="/transitions" class="text-red-500 hover:underline font-semibold">
+      ← Back</a
+    >
+  </div>
+
+  <div class="flex flex-col items-center mt-12 md:mt-16">
+    <div>
+      <img
+        src={album?.cover}
+        alt={album?.name}
+        class="aspect-square w-48 shadow-sm"
+        transition:name="album-cover"
+      />
+    </div>
+    <h1 class="font-bold text-xl mt-6">
+      {album?.name}
+    </h1>
+    <p>{album?.artist}</p>
+  </div>
+</Base>
