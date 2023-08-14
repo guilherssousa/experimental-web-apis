@@ -4,16 +4,28 @@
     "artist": "Seu Jorge",
     "slug": "musicas-para-churrasco-vol-1",
     "spotify_url": "https://open.spotify.com/intl-pt/album/3LVFK1YwvyZMU1u20U2dMg?si=wSUgVAU6RYWLH0gmEiSYpg",
-    "cover": "https://i.scdn.co/image/ab67616d0000b273dcd1b08fc802e3099a0b501a",
-    "tracks": []
+    "cover": "https://i.scdn.co/image/ab67616d0000b273dcd1b08fc802e3099a0b501a"
   },
   {
     "name": "Tropical Nada",
     "artist": "Daniel Furlan",
     "slug": "tropical-nada",
+    "genre": "Experimental",
+    "year": "2023",
     "spotify_url": "https://open.spotify.com/intl-pt/album/5Jmxf1GLQ1ZKV1UnFdrM04?si=RVLmWmUjTC6QufsoKl4DDg",
     "cover": "https://i.scdn.co/image/ab67616d0000b27385ac245bb87a6ffd4f3ec9ee",
-    "tracks": []
+    "tracks": [
+      "Beijo de Saliva",
+      "Você É um Piano Caindo do Topo de um Prédio Em Cima de Mim",
+      "Não Vale Nada",
+      "Quem É Meu Pai",
+      "Quem Eu Tive Um Pesadelo Com Você",
+      "Quem Eu Tive Um Pesadelo Com Você (Outro)",
+      "Sexo Ruim",
+      "A Gente Não Era Assim",
+      "Que Frenesi",
+      "Esqueci o Nome"
+    ]
   },
   {
     "name": "IGOR",

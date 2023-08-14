@@ -9,10 +9,10 @@ import ExperimentList from "../components/ExperimentList.svelte";
 import Contributors from "../components/Contributors.svelte";
 
 const code = `if (!("<feature-name>" in window)) {
-    // Informe o usuário que a função não está disponível e não execute o código.
-    // ...
-    return
-  }`;
+  // Informe o usuário que a função não está disponível e não execute o código.
+  // ...
+  return;
+}`;
 ---
 
 <Base>
@@ -29,7 +29,7 @@ const code = `if (!("<feature-name>" in window)) {
       </p>
     </div>
 
-    <ul class="mt-2 flex flex-wrap gap-x-6 gap-y-2 text-cyan-500 font-bold">
+    <ul class="mt-2 flex flex-wrap gap-x-4 gap-y-2 text-cyan-500 font-bold">
       <li><a href="#apis">Experimentos</a></li>
       <li><a href="#how-to">Como usar</a></li>
       <li><a href="#sobre">Sobre</a></li>
@@ -110,6 +110,6 @@ const code = `if (!("<feature-name>" in window)) {
   }
 
   p {
-    @apply leading-relaxed dark:text-neutral-300;
+    @apply leading-relaxed dark:text-neutral-100;
   }
 </style>
