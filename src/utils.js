@@ -1,6 +1,8 @@
 import apis from "./data/apis.json";
 
 export function fillAvailable(features = []) {
+  if (typeof window === "undefined") return features;
+
   return features
     .map((api) => {
       api.available = api.id in window;
