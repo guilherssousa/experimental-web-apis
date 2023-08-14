@@ -18,6 +18,6 @@
     "name": "HTML Sanitizer API",
     "description": "A API de sanitização HTML fornece uma maneira segura de inserir HTML na DOM sem a possibilidade de injetar código malicioso.",
     "link": "/sanitizer",
-    "tags": ["🛡 Apenas HTTPS"]
+    "tags": []
   }
 ]

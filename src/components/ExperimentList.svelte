@@ -3,11 +3,11 @@
   import { fillAvailable } from "../utils";
 </script>
 
-<ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-6">
   {#each fillAvailable(available) as api (api.link)}
     <li>
       <a href={api.link}>
-        <h3 class="text-xl dark:text-neutral-100 font-bold text-neutral-900">
+        <h3 class="text-xl dark:text-neutral-200 font-bold text-neutral-900">
           {api.available ? "✅" : "⛔"}
           {api.name} &rarr;
         </h3>

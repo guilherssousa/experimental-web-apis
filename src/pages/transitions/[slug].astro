@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+
 import albums from "../../data/albums.json";
 
 export function getStaticPaths() {
@@ -14,24 +15,24 @@ if (!album) Astro.redirect("/transitions");
 <title>{album?.name} de {album?.artist} - Laboratório de Web APIs</title>
 
 <Base>
-  <div class="py-4">
+  <div class="py-6 px-2">
     <a href="/transitions" class="text-red-500 hover:underline font-semibold">
       ← Back</a
     >
   </div>
 
-  <div class="flex flex-col items-center mt-12 md:mt-16">
-    <div>
+  <div class="flex flex-col items-center mt-4 md:mt-16">
+    <div class="w-64 aspect-square group">
       <img
         src={album?.cover}
         alt={album?.name}
-        class="aspect-square w-48 shadow-sm"
+        class="absolute aspect-square w-64 shadow-sm rounded-sm z-20"
         transition:name={`album-cover-${album?.slug}`}
       />
     </div>
-    <h1 class="font-bold text-xl mt-6">
+    <h1 class="font-bold text-xl mt-6 dark:text-neutral-100">
       {album?.name}
     </h1>
-    <p>{album?.artist}</p>
+    <p class="dark:text-neutral-300">{album?.artist}</p>
   </div>
 </Base>
