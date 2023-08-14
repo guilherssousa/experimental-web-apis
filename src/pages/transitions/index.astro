@@ -59,7 +59,7 @@ import albuns from "../../data/albums.json";
             src={album.cover}
             alt={album.name}
             class="bg-neutral-400 rounded-md aspect-square"
-            transition:name="album-cover"
+            transition:name={`album-cover-${album.slug}`}
           />
           <h3 class="font-medium text-neutral-700 text-md mt-2 leading-tight line-clamp-2">
             {album.name}

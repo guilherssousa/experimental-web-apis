@@ -7,8 +7,7 @@
   import BarcodeTable from "../components/BarcodeTable.svelte";
   import Rectangle from "../components/Rectangle.svelte";
 
-  const available =
-    typeof window !== "undefined" && "BarcodeDetector" in window;
+  const available = "BarcodeDetector" in window;
   let output = [];
   let rectangles = [];
   let image;
@@ -87,10 +86,10 @@
 <div>
   <h3 class="text-xl font-bold mt-2" id="input">Input</h3>
 
-  <div class="mt-2">
+  <div class="mt-2 flex gap-x-2">
     <label
       for="changeImage"
-      class="rounded-md bg-cyan-500 text-white font-semibold px-2 py-1 cursor-pointer"
+      class="block w-fit rounded-md text-base bg-cyan-500 text-white font-semibold px-2 py-1 cursor-pointer"
     >
       Trocar Imagem
     </label>
@@ -105,7 +104,7 @@
     {#if !available}
       <button
         on:click={useMockOutput}
-        class="rounded-md bg-cyan-500 text-white font-semibold px-2 py-1"
+        class="rounded-md text-base bg-cyan-500 text-white font-semibold px-2 py-1"
       >
         Usar Mock Payload
       </button>
