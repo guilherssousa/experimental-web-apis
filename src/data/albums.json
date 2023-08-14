@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Músicas para Churrasco, Vol. 1",
+    "artist": "Seu Jorge",
+    "slug": "musicas-para-churrasco-vol-1",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/3LVFK1YwvyZMU1u20U2dMg?si=wSUgVAU6RYWLH0gmEiSYpg",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273dcd1b08fc802e3099a0b501a",
+    "tracks": []
+  },
+  {
+    "name": "Tropical Nada",
+    "artist": "Daniel Furlan",
+    "slug": "tropical-nada",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/5Jmxf1GLQ1ZKV1UnFdrM04?si=RVLmWmUjTC6QufsoKl4DDg",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27385ac245bb87a6ffd4f3ec9ee",
+    "tracks": []
+  },
+  {
+    "name": "IGOR",
+    "artist": "Tyler, The Creator",
+    "slug": "igor",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/5zi7WsKlIiUXv09tbGLKsE?si=IwG-EcBMSjulw6YZP7M-bQ",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57",
+    "tracks": []
+  },
+  {
+    "name": "LMLY",
+    "artist": "Jackson Wang",
+    "slug": "lmly",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/09UJf8ZqCuv5NHRZIqTZgh?si=hIp67pd0TGyMcxwun0Kcmw",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273da4910056497c667d6de40cf",
+    "tracks": []
+  },
+  {
+    "name": "CPM 22 - Acústico",
+    "artist": "CPM 22",
+    "slug": "cpm-22-acustico",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/4LzjCuCcssmyxrnUHRwhE4?si=ZcmOwb1TRBqnLvQrkDAonA",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27393d7be5d1873ad7e46f401a2",
+    "tracks": []
+  },
+  {
+    "name": "Perfume - THE 1ST MINI ALBUM",
+    "artist": "NCT DOJAEJUNG",
+    "slug": "perfume-the-1st-mini-album",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/3sVBVr420an61GAwib9AYk?si=0-15LKyOQCupIYV5Ip_o5A",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27327cc105dd498a481f805f9a0",
+    "tracks": []
+  }
+]

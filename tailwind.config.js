@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", ...fontFamily.sans],
+        sans: ["Inter", ...fontFamily.sans],
       },
     },
   },
