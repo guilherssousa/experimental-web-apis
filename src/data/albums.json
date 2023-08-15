@@ -51,32 +51,72 @@
     ]
   },
   {
-    "name": "Tropical Nada",
-    "artist": "Daniel Furlan",
-    "slug": "tropical-nada",
-    "genre": "Experimental",
-    "year": "2023",
-    "spotify_url": "https://open.spotify.com/intl-pt/album/5Jmxf1GLQ1ZKV1UnFdrM04?si=RVLmWmUjTC6QufsoKl4DDg",
-    "cover": "https://i.scdn.co/image/ab67616d0000b27385ac245bb87a6ffd4f3ec9ee",
+    "name": "Fearless (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "slug": "fearless-taylors-version",
+    "genre": "Pop Country",
+    "year": "2021",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/4hDok0OAJd57SGIT8xuWJH?si=skZKAiTxTnir6oeavfQzjg",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de",
     "tracks": [
-      { "name": "Beijo de Saliva", "duration": "2:51" },
+      { "name": "Fearless (Taylor's Version)", "duration": "4:01" },
+      { "name": "Fifteen (Taylor's Version)", "duration": "4:54" },
+      { "name": "Love Story (Taylor's Version)", "duration": "3:55" },
+      { "name": "Hey Stephen (Taylor's Version)", "duration": "4:14" },
+      { "name": "White Horse (Taylor's Version)", "duration": "3:54" },
+      { "name": "You Belong With Me (Taylor's Version)", "duration": "3:51" },
       {
-        "name": "Você É um Piano Caindo do Topo de um Prédio Em Cima de Mim",
-        "duration": "3:25"
+        "name": "Breathe (feat. Colbie Cailat) (Taylor's Version)",
+        "duration": "4:23"
       },
-      { "name": "Não Vale Nada", "duration": "3:21" },
-      { "name": "Quem É Meu Pai", "duration": "3:07" },
-      { "name": "Quem Eu Tive Um Pesadelo Com Você", "duration": "3:38" },
+      { "name": "Tell Me Why (Taylor's Version)", "duration": "3:20" },
+      { "name": "You're Not Sorry (Taylor's Version)", "duration": "4:21" },
+      { "name": "The Way I Loved You (Taylor's Version)", "duration": "3:45" },
+      { "name": "The Best Day (Taylor's Version)", "duration": "4:05" },
+      { "name": "Change  (Taylor's Version)", "duration": "4:39" },
+      { "name": "Jump Then Fall (Taylor's Version)", "duration": "3:57" },
+      { "name": "Untouchable (Taylor's Version)", "duration": "5:12" },
+      { "name": "Forever & Always (Taylor's Version)", "duration": "4:27" },
       {
-        "name": "Quem Eu Tive Um Pesadelo Com Você (Outro)",
-        "duration": "1:49"
+        "name": "Come In With The Rain (Taylor's Version)",
+        "duration": "3:57"
       },
-      { "name": "Sexo Ruim", "duration": "5:34" },
-      { "name": "A Gente Não Era Assim", "duration": "2:21" },
-      { "name": "Que Frenesi", "duration": "1:45" },
-      { "name": "Esqueci o Nome", "duration": "6:28" }
+      { "name": "Superstar (Taylor's Version)", "duration": "4:23" },
+      {
+        "name": "The Other Side Of The Door (Taylor's Version)",
+        "duration": "3:58"
+      },
+      {
+        "name": "Today Was A Fairytale (Taylor's Version)",
+        "duration": "4:01"
+      },
+      {
+        "name": "You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault)",
+        "duration": "3:40"
+      },
+      {
+        "name": "Mr. Perfectly Fine (Taylor's Version) (From The Vault)",
+        "duration": "4:37"
+      },
+      {
+        "name": "We Were Happy (Taylor's Version) (From The Vault)",
+        "duration": "4:04"
+      },
+      {
+        "name": "That's When (Taylor's Version) (From The Vault)",
+        "duration": "3:09"
+      },
+      {
+        "name": "Don't You (Taylor's Version) (From The Vault)",
+        "duration": "3:28"
+      },
+      {
+        "name": "Bye Bye Baby (Taylor's Version) (From The Vault)",
+        "duration": "4:02"
+      }
     ]
   },
+  
   {
     "name": "IGOR",
     "artist": "Tyler, The Creator",
@@ -169,6 +209,33 @@
     ]
   },
   {
+    "name": "Tropical Nada",
+    "artist": "Daniel Furlan",
+    "slug": "tropical-nada",
+    "genre": "Experimental",
+    "year": "2023",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/5Jmxf1GLQ1ZKV1UnFdrM04?si=RVLmWmUjTC6QufsoKl4DDg",
+    "cover": "https://i.scdn.co/image/ab67616d0000b27385ac245bb87a6ffd4f3ec9ee",
+    "tracks": [
+      { "name": "Beijo de Saliva", "duration": "2:51" },
+      {
+        "name": "Você É um Piano Caindo do Topo de um Prédio Em Cima de Mim",
+        "duration": "3:25"
+      },
+      { "name": "Não Vale Nada", "duration": "3:21" },
+      { "name": "Quem É Meu Pai", "duration": "3:07" },
+      { "name": "Quem Eu Tive Um Pesadelo Com Você", "duration": "3:38" },
+      {
+        "name": "Quem Eu Tive Um Pesadelo Com Você (Outro)",
+        "duration": "1:49"
+      },
+      { "name": "Sexo Ruim", "duration": "5:34" },
+      { "name": "A Gente Não Era Assim", "duration": "2:21" },
+      { "name": "Que Frenesi", "duration": "1:45" },
+      { "name": "Esqueci o Nome", "duration": "6:28" }
+    ]
+  },
+  {
     "name": "CPM 22 - Acústico",
     "artist": "CPM 22",
     "slug": "cpm-22-acustico",
@@ -248,72 +315,6 @@
       { "name": "Cool With You", "duration": "2:27" },
       { "name": "Get Up", "duration": "0:36" },
       { "name": "ASAP", "duration": "2:14" }
-    ]
-  },
-  {
-    "name": "Fearless (Taylor's Version)",
-    "artist": "Taylor Swift",
-    "slug": "fearless-taylors-version",
-    "genre": "Pop Country",
-    "year": "2021",
-    "spotify_url": "https://open.spotify.com/intl-pt/album/4hDok0OAJd57SGIT8xuWJH?si=skZKAiTxTnir6oeavfQzjg",
-    "cover": "https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de",
-    "tracks": [
-      { "name": "Fearless (Taylor's Version)", "duration": "4:01" },
-      { "name": "Fifteen (Taylor's Version)", "duration": "4:54" },
-      { "name": "Love Story (Taylor's Version)", "duration": "3:55" },
-      { "name": "Hey Stephen (Taylor's Version)", "duration": "4:14" },
-      { "name": "White Horse (Taylor's Version)", "duration": "3:54" },
-      { "name": "You Belong With Me (Taylor's Version)", "duration": "3:51" },
-      {
-        "name": "Breathe (feat. Colbie Cailat) (Taylor's Version)",
-        "duration": "4:23"
-      },
-      { "name": "Tell Me Why (Taylor's Version)", "duration": "3:20" },
-      { "name": "You're Not Sorry (Taylor's Version)", "duration": "4:21" },
-      { "name": "The Way I Loved You (Taylor's Version)", "duration": "3:45" },
-      { "name": "The Best Day (Taylor's Version)", "duration": "4:05" },
-      { "name": "Change  (Taylor's Version)", "duration": "4:39" },
-      { "name": "Jump Then Fall (Taylor's Version)", "duration": "3:57" },
-      { "name": "Untouchable (Taylor's Version)", "duration": "5:12" },
-      { "name": "Forever & Always (Taylor's Version)", "duration": "4:27" },
-      {
-        "name": "Come In With The Rain (Taylor's Version)",
-        "duration": "3:57"
-      },
-      { "name": "Superstar (Taylor's Version)", "duration": "4:23" },
-      {
-        "name": "The Other Side Of The Door (Taylor's Version)",
-        "duration": "3:58"
-      },
-      {
-        "name": "Today Was A Fairytale (Taylor's Version)",
-        "duration": "4:01"
-      },
-      {
-        "name": "You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault)",
-        "duration": "3:40"
-      },
-      {
-        "name": "Mr. Perfectly Fine (Taylor's Version) (From The Vault)",
-        "duration": "4:37"
-      },
-      {
-        "name": "We Were Happy (Taylor's Version) (From The Vault)",
-        "duration": "4:04"
-      },
-      {
-        "name": "That's When (Taylor's Version) (From The Vault)",
-        "duration": "3:09"
-      },
-      {
-        "name": "Don't You (Taylor's Version) (From The Vault)",
-        "duration": "3:28"
-      },
-      {
-        "name": "Bye Bye Baby (Taylor's Version) (From The Vault)",
-        "duration": "4:02"
-      }
     ]
   }
 ]

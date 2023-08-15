@@ -36,6 +36,13 @@ import albuns from "../../data/albums.json";
     >)
   </p>
 
+  <p class="mt-2">
+    Alguns bugs observados durante o desenvolvimento foram coisas como
+    codificação de caracteres quebrando, efeitos de transição não funcionando,
+    entre outros. Mas, é algo que passa batido se levarmos em consideração
+    que estamos trabalhando com uma API em desenvolvimento.
+  </p>
+
   <a
     class="text-cyan-600 font-semibold hover:underline"
     href="https://developer.mozilla.org/en-US/docs/Web/API/BarcodeDetector"
@@ -62,13 +69,13 @@ import albuns from "../../data/albums.json";
             transition:name={`album-cover-${album.slug}`}
           />
           <h3
-            class="font-medium text-neutral-700 text-md mt-2 leading-tight line-clamp-2"
+            class="font-medium dark:text-neutral-300 text-neutral-700 text-md mt-2 leading-tight line-clamp-2"
             transition:name={`album-name-${album.slug}`}
           >
             {album.name}
           </h3>
           <p
-            class="text-neutral-500 text-sm font-medium"
+            class="text-neutral-500 dark:text-neutral-400 text-sm font-medium"
             transition:name={`album-artist-${album.slug}`}
           >
             {album.artist}

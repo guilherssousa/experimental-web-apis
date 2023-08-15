@@ -2,7 +2,7 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
+  darkMode: "media",
   content: ["./index.html", "./src/**/*.{svelte,js,astro}"],
   theme: {
     extend: {
