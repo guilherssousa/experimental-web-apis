@@ -4,7 +4,51 @@
     "artist": "Seu Jorge",
     "slug": "musicas-para-churrasco-vol-1",
     "spotify_url": "https://open.spotify.com/intl-pt/album/3LVFK1YwvyZMU1u20U2dMg?si=wSUgVAU6RYWLH0gmEiSYpg",
-    "cover": "https://i.scdn.co/image/ab67616d0000b273dcd1b08fc802e3099a0b501a"
+    "cover": "https://i.scdn.co/image/ab67616d0000b273dcd1b08fc802e3099a0b501a",
+    "genre": "Música Brasileira",
+    "year": "2011",
+    "tracks": [
+      {
+        "name": "A Doida",
+        "duration": "3:04"
+      },
+      {
+        "name": "Meu Parceiro",
+        "duration": "3:01"
+      },
+      {
+        "name": "Véia",
+        "duration": "3:20"
+      },
+      {
+        "name": "Dois Beijinhos",
+        "duration": "4:14"
+      },
+      {
+        "name": "Vizinha",
+        "duration": "3:35"
+      },
+      {
+        "name": "Amiga da Minha Mulher",
+        "duration": "4:08"
+      },
+      {
+        "name": "Dia de Comemorar",
+        "duration": "3:05"
+      },
+      {
+        "name": "Japonesa",
+        "duration": "3:54"
+      },
+      {
+        "name": "Olê Olé",
+        "duration": "3:91"
+      },
+      {
+        "name": "Quem Não Quer Sou Eu",
+        "duration": "5:26"
+      }
+    ]
   },
   {
     "name": "Tropical Nada",
@@ -15,48 +59,261 @@
     "spotify_url": "https://open.spotify.com/intl-pt/album/5Jmxf1GLQ1ZKV1UnFdrM04?si=RVLmWmUjTC6QufsoKl4DDg",
     "cover": "https://i.scdn.co/image/ab67616d0000b27385ac245bb87a6ffd4f3ec9ee",
     "tracks": [
-      "Beijo de Saliva",
-      "Você É um Piano Caindo do Topo de um Prédio Em Cima de Mim",
-      "Não Vale Nada",
-      "Quem É Meu Pai",
-      "Quem Eu Tive Um Pesadelo Com Você",
-      "Quem Eu Tive Um Pesadelo Com Você (Outro)",
-      "Sexo Ruim",
-      "A Gente Não Era Assim",
-      "Que Frenesi",
-      "Esqueci o Nome"
+      { "name": "Beijo de Saliva", "duration": "2:51" },
+      {
+        "name": "Você É um Piano Caindo do Topo de um Prédio Em Cima de Mim",
+        "duration": "3:25"
+      },
+      { "name": "Não Vale Nada", "duration": "3:21" },
+      { "name": "Quem É Meu Pai", "duration": "3:07" },
+      { "name": "Quem Eu Tive Um Pesadelo Com Você", "duration": "3:38" },
+      {
+        "name": "Quem Eu Tive Um Pesadelo Com Você (Outro)",
+        "duration": "1:49"
+      },
+      { "name": "Sexo Ruim", "duration": "5:34" },
+      { "name": "A Gente Não Era Assim", "duration": "2:21" },
+      { "name": "Que Frenesi", "duration": "1:45" },
+      { "name": "Esqueci o Nome", "duration": "6:28" }
     ]
   },
   {
     "name": "IGOR",
     "artist": "Tyler, The Creator",
     "slug": "igor",
+    "genre": "Hip-Hop / Rap",
+    "year": "2019",
     "spotify_url": "https://open.spotify.com/intl-pt/album/5zi7WsKlIiUXv09tbGLKsE?si=IwG-EcBMSjulw6YZP7M-bQ",
     "cover": "https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57",
-    "tracks": []
+    "tracks": [
+      {
+        "name": "IGOR'S THEME",
+        "duration": "3:20"
+      },
+      {
+        "name": "EARFQUAKE",
+        "duration": "3:10",
+        "explicit": true
+      },
+      {
+        "name": "I THINK",
+        "duration": "3:32"
+      },
+      {
+        "name": "EXACTLY WHAT YOU RUN FROM YOU END UP CHASING",
+        "duration": "0:14"
+      },
+      {
+        "name": "RUNNING OUT OF TIME",
+        "duration": "2:57",
+        "explicit": true
+      },
+      {
+        "name": "NEW MAGIC WAND",
+        "duration": "3:15",
+        "explicit": true
+      },
+      {
+        "name": "A BOY IS A GUN*",
+        "duration": "3:30",
+        "explicit": true
+      },
+      {
+        "name": "PUPPET",
+        "duration": "2:59",
+        "explicit": true
+      },
+      {
+        "name": "WHAT'S GOOD",
+        "duration": "3:25",
+        "explicit": true
+      },
+      {
+        "name": "GONE, GONE / THANK YOU",
+        "duration": "6:15",
+        "explicit": true
+      },
+      {
+        "name": "I DON'T LOVE YOU ANYMORE",
+        "duration": "2:41",
+        "explicit": true
+      },
+      {
+        "name": "ARE WE STILL FRIENDS?",
+        "duration": "2:41",
+        "explicit": true
+      }
+    ]
   },
   {
     "name": "LMLY",
     "artist": "Jackson Wang",
     "slug": "lmly",
+    "genre": "Indie",
+    "year": "2021",
     "spotify_url": "https://open.spotify.com/intl-pt/album/09UJf8ZqCuv5NHRZIqTZgh?si=hIp67pd0TGyMcxwun0Kcmw",
     "cover": "https://i.scdn.co/image/ab67616d0000b273da4910056497c667d6de40cf",
-    "tracks": []
+    "tracks": [
+      {
+        "name": "LMLY",
+        "duration": "3:29"
+      },
+      {
+        "name": "Pretty Please",
+        "duration": "2:25"
+      },
+      {
+        "name": "100 Ways",
+        "duration": "2:48"
+      }
+    ]
   },
   {
     "name": "CPM 22 - Acústico",
     "artist": "CPM 22",
     "slug": "cpm-22-acustico",
+    "genre": "Ao Vivo",
+    "year": "2013",
     "spotify_url": "https://open.spotify.com/intl-pt/album/4LzjCuCcssmyxrnUHRwhE4?si=ZcmOwb1TRBqnLvQrkDAonA",
     "cover": "https://i.scdn.co/image/ab67616d0000b27393d7be5d1873ad7e46f401a2",
-    "tracks": []
+    "tracks": [
+      {
+        "name": "Não Sei Viver Sem Ter Você - Live",
+        "duration": "3:52"
+      },
+      {
+        "name": "Desconfio - Live",
+        "duration": "2:55"
+      },
+      {
+        "name": "O Chão Que Ela Pisa - Live",
+        "duration": "2:55"
+      },
+      {
+        "name": "Tony Galano - Live",
+        "duration": "3:12"
+      },
+      {
+        "name": "Vida ou Morte - Live",
+        "duration": "2:56"
+      },
+      { "name": "Vai Mudar? - Live", "duration": "2:31" },
+      { "name": "Irreversível - Live", "duration": "4:11" },
+      { "name": "Por Nós 3 - Live", "duration": "2:49" },
+      { "name": "Tarde De Outubro - Live", "duration": "2:32" },
+      { "name": "Sofridos E Excluídos - Live", "duration": "2:45" },
+      { "name": "Dias Atrás - Live", "duration": "4:33" },
+      { "name": "Perdas - Live", "duration": "3:21" },
+      { "name": "Sonhos E Planos - Live", "duration": "2:57" },
+      { "name": "Nossa Música - Live", "duration": "3:15" },
+      { "name": "O Mundo Dá Voltas - Live", "duration": "3:10" },
+      { "name": "A Alguns Quilômetros De Lugar Nenhum", "duration": "3:45" },
+      { "name": "Pra Sempre - Acoustic Version", "duration": "3:54" },
+      { "name": "Um Minuto Para O Fim Do Mundo - Live", "duration": "3:18" },
+      { "name": "CPM 22 - Live", "duration": "3:27" },
+      { "name": "A Cura - Live", "duration": "3:07" },
+      { "name": "1000 Motivos - Live", "duration": "3:22" },
+      { "name": "Regina Let's Go - Live", "duration": "2:56" }
+    ]
   },
   {
     "name": "Perfume - THE 1ST MINI ALBUM",
     "artist": "NCT DOJAEJUNG",
     "slug": "perfume-the-1st-mini-album",
+    "genre": "K-Pop",
+    "year": "2023",
     "spotify_url": "https://open.spotify.com/intl-pt/album/3sVBVr420an61GAwib9AYk?si=0-15LKyOQCupIYV5Ip_o5A",
     "cover": "https://i.scdn.co/image/ab67616d0000b27327cc105dd498a481f805f9a0",
-    "tracks": []
+    "tracks": [
+      { "name": "Perfume", "duration": "2:47" },
+      { "name": "Kiss", "duration": "3:00" },
+      { "name": "Dive", "duration": "3:56" },
+      { "name": "Strawberry Sunday", "duration": "2:58" },
+      { "name": "Can We Go Back", "duration": "3:23" },
+      { "name": "Ordinary", "duration": "3:18" }
+    ]
+  },
+  {
+    "name": "NewJeans 2nd EP 'Get Up'",
+    "artist": "NewJeans",
+    "slug": "newjeans-2nd-ep-get-up",
+    "genre": "K-Pop",
+    "year": "2023",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/4N1fROq2oeyLGAlQ1C1j18?si=tXonda1gTOu1kM2zMzDezw",
+    "cover": "https://i.scdn.co/image/ab67616d0000b2730744690248ef3ba7b776ea7b",
+    "tracks": [
+      { "name": "New Jeans", "duration": "1:48" },
+      { "name": "Super Shy", "duration": "2:34" },
+      { "name": "ETA", "duration": "2:31" },
+      { "name": "Cool With You", "duration": "2:27" },
+      { "name": "Get Up", "duration": "0:36" },
+      { "name": "ASAP", "duration": "2:14" }
+    ]
+  },
+  {
+    "name": "Fearless (Taylor's Version)",
+    "artist": "Taylor Swift",
+    "slug": "fearless-taylors-version",
+    "genre": "Pop Country",
+    "year": "2021",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/4hDok0OAJd57SGIT8xuWJH?si=skZKAiTxTnir6oeavfQzjg",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de",
+    "tracks": [
+      { "name": "Fearless (Taylor's Version)", "duration": "4:01" },
+      { "name": "Fifteen (Taylor's Version)", "duration": "4:54" },
+      { "name": "Love Story (Taylor's Version)", "duration": "3:55" },
+      { "name": "Hey Stephen (Taylor's Version)", "duration": "4:14" },
+      { "name": "White Horse (Taylor's Version)", "duration": "3:54" },
+      { "name": "You Belong With Me (Taylor's Version)", "duration": "3:51" },
+      {
+        "name": "Breathe (feat. Colbie Cailat) (Taylor's Version)",
+        "duration": "4:23"
+      },
+      { "name": "Tell Me Why (Taylor's Version)", "duration": "3:20" },
+      { "name": "You're Not Sorry (Taylor's Version)", "duration": "4:21" },
+      { "name": "The Way I Loved You (Taylor's Version)", "duration": "3:45" },
+      { "name": "The Best Day (Taylor's Version)", "duration": "4:05" },
+      { "name": "Change  (Taylor's Version)", "duration": "4:39" },
+      { "name": "Jump Then Fall (Taylor's Version)", "duration": "3:57" },
+      { "name": "Untouchable (Taylor's Version)", "duration": "5:12" },
+      { "name": "Forever & Always (Taylor's Version)", "duration": "4:27" },
+      {
+        "name": "Come In With The Rain (Taylor's Version)",
+        "duration": "3:57"
+      },
+      { "name": "Superstar (Taylor's Version)", "duration": "4:23" },
+      {
+        "name": "The Other Side Of The Door (Taylor's Version)",
+        "duration": "3:58"
+      },
+      {
+        "name": "Today Was A Fairytale (Taylor's Version)",
+        "duration": "4:01"
+      },
+      {
+        "name": "You All Over Me (feat. Maren Morris) (Taylor's Version) (From The Vault)",
+        "duration": "3:40"
+      },
+      {
+        "name": "Mr. Perfectly Fine (Taylor's Version) (From The Vault)",
+        "duration": "4:37"
+      },
+      {
+        "name": "We Were Happy (Taylor's Version) (From The Vault)",
+        "duration": "4:04"
+      },
+      {
+        "name": "That's When (Taylor's Version) (From The Vault)",
+        "duration": "3:09"
+      },
+      {
+        "name": "Don't You (Taylor's Version) (From The Vault)",
+        "duration": "3:28"
+      },
+      {
+        "name": "Bye Bye Baby (Taylor's Version) (From The Vault)",
+        "duration": "4:02"
+      }
+    ]
   }
 ]

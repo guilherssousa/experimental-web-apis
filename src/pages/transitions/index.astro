@@ -12,7 +12,7 @@ import albuns from "../../data/albums.json";
 <Base>
   <Navbar />
 
-  <h1 class="mt-4 font-bold text-3xl">View Transitions API</h1>
+  <h1 class="mt-4 font-bold text-3xl">View Transition API</h1>
 
   <p class="mt-2">
     A API de transição de Views fornece um mecanismo para criar facilmente
@@ -61,10 +61,18 @@ import albuns from "../../data/albums.json";
             class="bg-neutral-400 dark:bg-neutral-900 rounded-md aspect-square"
             transition:name={`album-cover-${album.slug}`}
           />
-          <h3 class="font-medium text-neutral-700 text-md mt-2 leading-tight line-clamp-2">
+          <h3
+            class="font-medium text-neutral-700 text-md mt-2 leading-tight line-clamp-2"
+            transition:name={`album-name-${album.slug}`}
+          >
             {album.name}
           </h3>
-          <p class="text-neutral-500 text-sm font-medium">{album.artist}</p>
+          <p
+            class="text-neutral-500 text-sm font-medium"
+            transition:name={`album-artist-${album.slug}`}
+          >
+            {album.artist}
+          </p>
         </a>
       ))
     }

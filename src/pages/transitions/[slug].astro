@@ -30,53 +30,73 @@ if (!album) Astro.redirect("/transitions");
         transition:name={`album-cover-${album?.slug}`}
       />
     </div>
-    <h1 class="font-bold text-xl mt-6 dark:text-neutral-100">
+    <h1
+      class="font-bold text-xl mt-6 dark:text-neutral-100"
+      transition:name={`album-name-${album?.slug}`}
+    >
       {album?.name}
     </h1>
-    <p class="dark:text-neutral-300">{album?.artist}</p>
+    <p
+      class="dark:text-neutral-300"
+      transition:name={`album-artist-${album?.slug}`}
+    >
+      {album?.artist}
+    </p>
     <p class="text-sm font-medium text-neutral-600 mt-2">
-      {album?.genre} &bull; {album?.year}
+      {album?.genre} &bull; {album?.year} &bull; {album?.tracks?.length} faixas
+
+      <div class="mt-2 text-red-400 cursor-pointer">
+        <a href={album?.spotify_url} target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-12 h-12"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
     </p>
 
-    <div class="mt-2 text-red-400 cursor-pointer">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        class="w-12 h-12"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm14.024-.983a1.125 1.125 0 010 1.966l-5.603 3.113A1.125 1.125 0 019 15.113V8.887c0-.857.921-1.4 1.671-.983l5.603 3.113z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
+    <ul class="mt-12 max-w-screen-md w-full mx-auto mb-2">
+      {
+        album?.tracks?.map((track, index) => (
+          <li class="flex items-center justify-between border-b p-3 last:border-b-0 even:bg-neutral-100/30 hover:bg-neutral-200/50 cursor-pointer">
+            <div class="flex">
+              <div class="text-neutral-400 min-w-[3ch]">{index + 1}</div>
+              <div class="font-semibold text-neutral-700 line-clamp-1">
+                {track.name}
+              </div>
+              {track.explicit && (
+                <div class="flex items-center text-[14px] bg-red-100 px-2 rounded-md font-bold text-red-400 ml-2">
+                  E
+                </div>
+              )}
+            </div>
+            <div class="ml-2 flex gap-x-2 text-sm items-center">
+              {track.duration}
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 text-red-400"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
   </div>
-
-  <ul class="mt-12 max-w-screen-md mx-auto mb-12">
-    {
-      album?.tracks?.map((track, index) => (
-        <li class="flex items-center justify-between border-b p-3 last:border-b-0 even:bg-neutral-100/30 hover:bg-neutral-200/50 cursor-pointer">
-          <div class="flex">
-            <div class="text-neutral-400 w-[3ch]">{index + 1}</div>
-            <div class="font-semibold text-neutral-700">{track}</div>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6 text-red-400"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </div>
-        </li>
-      ))
-    }
-  </ul>
 </Base>
