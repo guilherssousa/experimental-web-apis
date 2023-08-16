@@ -5,7 +5,7 @@ import Highlight from "svelte-highlight";
 import javascript from "svelte-highlight/languages/javascript";
 import "highlight.js/styles/github-dark-dimmed.css";
 
-import ExperimentList from "../components/ExperimentList.svelte";
+import ExperimentList from "../components/ExperimentList.astro";
 import Contributors from "../components/Contributors.svelte";
 
 const code = `if (!("<feature-name>" in window)) {
@@ -45,7 +45,7 @@ const code = `if (!("<feature-name>" in window)) {
     <h2 class="font-bold text-2xl">🧪 Experimentos disponíveis</h2>
     <hr class="dark:border-neutral-700 my-4" />
 
-    <ExperimentList client:load />
+    <ExperimentList />
   </section>
 
   <section class="mt-8" id="how-to">

@@ -1,0 +1,29 @@
+
+---
+import available from "../data/apis.json";
+import ExperimentTitle from "./ExperimentTitle.svelte"
+---
+
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-4 gap-y-6">
+  {available.map((experiment) => (
+    <li>
+      <a href={experiment.link}>
+        <h3 class="text-xl dark:text-neutral-200 font-bold text-neutral-900" transition:name={`experiment-${experiment.id}`}>
+          <ExperimentTitle experimentId={experiment.id} client:only>{experiment.name}</ExperimentTitle>
+        </h3>
+
+        <p class="mt-1 dark:text-neutral-300 text-neutral-700">
+          {experiment.description}
+        </p>
+
+        <div class="flex items-center gap-x-2 mt-2">
+          {experiment.tags && experiment.tags.map((tag) => (
+            <div class="dark:bg-cyan-600 bg-cyan-500 text-white font-semibold px-2 rounded-md">
+              {tag}
+            </div>
+          ))}
+        </div>
+      </a>
+    </li>
+  ))}
+</ul>
