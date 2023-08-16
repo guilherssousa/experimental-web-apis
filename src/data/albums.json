@@ -186,26 +186,20 @@
     ]
   },
   {
-    "name": "LMLY",
-    "artist": "Jackson Wang",
-    "slug": "lmly",
-    "genre": "Indie",
-    "year": "2021",
-    "spotify_url": "https://open.spotify.com/intl-pt/album/09UJf8ZqCuv5NHRZIqTZgh?si=hIp67pd0TGyMcxwun0Kcmw",
-    "cover": "https://i.scdn.co/image/ab67616d0000b273da4910056497c667d6de40cf",
+    "name": "Take Over The Moon",
+    "artist": "WayV",
+    "slug": "take-over-the-moon",
+    "genre": "Mandopop",
+    "year": "2019",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/4ha80ucjDvhmQPLT77yyob?si=kuLK4i5gTaWsG1fgjrNtMQ",
+    "cover": "https://i.scdn.co/image/ab67616d00001e02374ed0d3862263ef52df6828",
     "tracks": [
-      {
-        "name": "LMLY",
-        "duration": "3:29"
-      },
-      {
-        "name": "Pretty Please",
-        "duration": "2:25"
-      },
-      {
-        "name": "100 Ways",
-        "duration": "2:48"
-      }
+        { "name": "Moonwalk", "duration": "3:42" },
+        { "name": "Yeah Yeah Yeah", "duration": "3:18" },
+        { "name": "Love Talk", "duration": "3:52" },
+        { "name": "King of Hearts", "duration": "3:18" },
+        { "name": "Face to Face", "duration": "3:27" },
+        { "name": "We go nanana", "duration": "3:26" }
     ]
   },
   {
@@ -284,20 +278,26 @@
     ]
   },
   {
-    "name": "Perfume - THE 1ST MINI ALBUM",
-    "artist": "NCT DOJAEJUNG",
-    "slug": "perfume-the-1st-mini-album",
-    "genre": "K-Pop",
-    "year": "2023",
-    "spotify_url": "https://open.spotify.com/intl-pt/album/3sVBVr420an61GAwib9AYk?si=0-15LKyOQCupIYV5Ip_o5A",
-    "cover": "https://i.scdn.co/image/ab67616d0000b27327cc105dd498a481f805f9a0",
+    "name": "LMLY",
+    "artist": "Jackson Wang",
+    "slug": "lmly",
+    "genre": "Indie",
+    "year": "2021",
+    "spotify_url": "https://open.spotify.com/intl-pt/album/09UJf8ZqCuv5NHRZIqTZgh?si=hIp67pd0TGyMcxwun0Kcmw",
+    "cover": "https://i.scdn.co/image/ab67616d0000b273da4910056497c667d6de40cf",
     "tracks": [
-      { "name": "Perfume", "duration": "2:47" },
-      { "name": "Kiss", "duration": "3:00" },
-      { "name": "Dive", "duration": "3:56" },
-      { "name": "Strawberry Sunday", "duration": "2:58" },
-      { "name": "Can We Go Back", "duration": "3:23" },
-      { "name": "Ordinary", "duration": "3:18" }
+      {
+        "name": "LMLY",
+        "duration": "3:29"
+      },
+      {
+        "name": "Pretty Please",
+        "duration": "2:25"
+      },
+      {
+        "name": "100 Ways",
+        "duration": "2:48"
+      }
     ]
   },
   {

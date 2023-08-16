@@ -7,17 +7,24 @@
     "tags": ["🌈 No site inteiro", "😎 Powered by Astro"]
   },
   {
-    "id": "Sanitizer",
-    "name": "HTML Sanitizer API",
-    "description": "A API de sanitização HTML fornece uma maneira segura de inserir HTML na DOM sem a possibilidade de injetar código malicioso.",
-    "link": "/sanitizer",
-    "tags": ["🐱‍👤 Segurança"]
-  },
-  {
     "id": "BarcodeDetector",
     "name": "Barcode Detection API",
     "description": "A API de detecção de código de barras fornece a capacidade de encontrar e decodificar múltiplos códigos de barras em uma imagem ou fluxo de vídeo.",
     "link": "/barcodes",
     "tags": ["🛡 Apenas HTTPS", "📱 Apenas Android"]
+  },
+  {
+    "id": "NDEFMessage",
+    "name": "Web NFC API",
+    "description": "A API Web NFC permite troca de dados usando Comunicação por Proximidade com mensagens NDEF.",
+    "link": "/nfc",
+    "tags": ["📱 Apenas Android"]
+  },
+  {
+    "id": "Sanitizer",
+    "name": "HTML Sanitizer API",
+    "description": "A API de sanitização HTML fornece uma maneira segura de inserir HTML na DOM sem a possibilidade de injetar código malicioso.",
+    "link": "/sanitizer",
+    "tags": ["🐱‍👤 Segurança"]
   }
 ]

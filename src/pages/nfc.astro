@@ -1,0 +1,32 @@
+---
+import Base from "../layouts/Base.astro";
+import Navbar from "../components/Navbar.astro";
+
+import NFCExample from "../screens/NFCExample.svelte";
+---
+
+<Base>
+    <Navbar />
+
+  <h1
+    class="mt-4 font-bold text-3xl"
+    transition:name="experiment-NDEFMessage"
+  >
+    Web NFC API
+  </h1>
+
+  <p class="mt-4">
+    A API Web NFC permite troca de dados usando Comunicação por Proximidade com mensagens NDEF.
+  </p>
+
+  <p class="mt-2">
+    A tecnologia NFC é
+    comumente usada em cartões de crédito sem contato, cartões de transporte público e cartões de identificação de
+    funcionários.
+  </p>
+
+  <h2 class="mt-4 font-bold text-2xl">Exemplo</h2>
+  <hr class="dark:border-neutral-700 my-2" />
+
+  <NFCExample client:only />
+</Base>

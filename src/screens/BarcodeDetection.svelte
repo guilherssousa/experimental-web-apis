@@ -1,6 +1,6 @@
 <script>
   import Highlight from "svelte-highlight";
-  import javascript from "svelte-highlight/languages/javascript";
+  import javascript from "svelte-highlight/languages/json";
   import "highlight.js/styles/github-dark-dimmed.css";
 
   import Callout from "../components/Callout.svelte";
