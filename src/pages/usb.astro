@@ -1,0 +1,55 @@
+---
+import Base from "../layouts/Base.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Base>
+    <Navbar />
+
+  <h1
+    class="mt-4 font-bold text-3xl"
+    transition:name="experiment-WebUSB"
+  >
+    Web USB API
+  </h1>
+
+  <p class="mt-4">
+    A Web USB API disponibiliza uma forma de expor serviços de dispositivos USB para a web.
+  </p>
+
+  <p class="mt-2">
+    Isso significa que os produtores de dispositivos poderão fornecer um método para que
+    seus dispositivos sejam acessíveis pela rede, sem precisar prover uma API proprietária.
+  </p>
+
+  <p class="mt-2">
+    Quando conectar um dispositivo compatível com o Web USB, o navegador irá mostrar uma notificação
+    fornecendo um link para o site do fabricante. Ao chegar no site, o browser irá pedir permissão para
+    conectar-se ao dispositivo, e então ele estará pronto para uso, sem necessidade para instalação de
+    drivers.
+  </p>
+
+  <h2 class="mt-4 font-bold text-2xl">Exemplo</h2>
+  <hr class="dark:border-neutral-700 my-2" />
+
+  <p class="mt-2">
+    Diferente do experimento de Web NFCs, trabalhar com dispositivos USB é bem mais complicado.
+    Partindo da ideia de que existe uma gama infinita de dispositivos que interagem com protocolos
+    e instruções diferentes sob o padrão USB, foi optado não deixar um exemplo real para uso nessa página,
+    mas sim um link para um projeto bem interessante:
+  </p>
+
+  <p class="mt-2">
+    Um pesquisador de segurança conhecido por <i>stacksmashing</i> fez um projeto incrível de um servidor
+    multiplayer de Tetris compatível com o jogo original lançado em 1984, para o Nintendo GameBoy. O projeto
+    usa a API de WebUSB para conectar os jogadores online e interagir com um hardware customizado que
+    lida com a comunicação com o console.
+  </p>
+
+  <p class="mt-2">
+    O código fonte da comunicação serial entre o cliente React e o hardware USB ligado no Gameboy está disponível no Github:
+    <a target="_blank" class="text-cyan-500 font-bold" href="https://github.com/stacksmashing/gb-tetris-web/blob/main/src/serial.js#L14">stacksmashing/gb-tetris-web/src/serial.js</a>
+  </p>
+
+  <iframe class="mt-6 w-full aspect-video" src="https://www.youtube.com/embed/KtHu693wE9o" title="Online Multiplayer on the Game Boy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</Base>
