@@ -20,7 +20,7 @@
     {#each users as user (user.id)}
       <li>
         <a
-          href={user.url}
+          href={"https://github.com/guilherssousa/experimental-web-apis/contributors"}
           class="flex items-center gap-x-2 hover:text-cyan-600"
         >
           <img
