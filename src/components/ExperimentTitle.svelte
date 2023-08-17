@@ -1,6 +1,6 @@
 <script>
     export let experimentId;
-    const available = experimentId in window;
+    const available = experimentId in window || experimentId in window.navigator;
 </script>
 
 <!--

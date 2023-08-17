@@ -21,6 +21,13 @@
     "tags": ["📱 Apenas Android"]
   },
   {
+    "id": "usb",
+    "name": "Web USB API",
+    "description": "A Web USB API disponibiliza uma forma de expor serviços de dispositivos USB para a web.",
+    "link": "/usb",
+    "tags": ["🛡 Apenas HTTPS"]
+  },
+  {
     "id": "Sanitizer",
     "name": "HTML Sanitizer API",
     "description": "A API de sanitização HTML fornece uma maneira segura de inserir HTML na DOM sem a possibilidade de injetar código malicioso.",
